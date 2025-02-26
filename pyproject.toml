@@ -1,0 +1,20 @@
+[project]
+name = "pluggy-py"
+version = "0.1.0"
+description = "Python client for Pluggy API"
+authors = [
+    {name = "Vinicius Anjos",email = "viniciusanjosdev@gmail.com"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.9.0"
+dependencies = [
+    "requests (>=2.32.3,<3.0.0)",
+    "pydantic (>=2.10.6,<3.0.0)",
+    "setuptools (>=75.8.0,<76.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

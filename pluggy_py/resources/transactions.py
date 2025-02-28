@@ -101,12 +101,12 @@ class TransactionsResource:
         )
         return Transaction(**response.json())
 
-    def update_transaction_category(self, transaction_id: str, category: str) -> Transaction:
+    def update_transaction_category(self, transaction_id: str, category_id: str) -> Transaction:
         """
         PATCH /transactions/{id} - Updates the transaction's category by its ID.
         """
         headers = {"X-API-KEY": self._api_key}
-        update_model = UpdateTransaction(category=category)
+        update_model = UpdateTransaction(categoryId=category_id)
 
         response: Response = self._http_client.patch(
             f"/transactions/{transaction_id}",

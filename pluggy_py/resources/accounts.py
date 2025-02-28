@@ -40,7 +40,7 @@ class AccountsResource:
         page_size: int = 50
     ) -> List[Account]:
         """
-        New method that returns ALL accounts from all pages, looping internally until
+        Method that returns ALL accounts from all pages, looping internally until
         totalPages is reached.
         """
         headers = {"X-API-KEY": self._api_key}

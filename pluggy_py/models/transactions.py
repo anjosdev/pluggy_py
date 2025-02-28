@@ -105,4 +105,4 @@ class UpdateTransaction(BaseModel):
     """
     Model for PATCH /transactions/{id} to update the transaction category.
     """
-    category: str = Field(..., description="The new category identifier")
+    categoryId: str = Field(..., description="The new category identifier")
